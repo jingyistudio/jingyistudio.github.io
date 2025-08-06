@@ -1,19 +1,50 @@
+
 <!DOCTYPE html>
 <html lang="zh">
 <head>
   <meta charset="UTF-8" />
   <title>Jingyi Studio · Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 40px; }
+    .card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      padding: 24px;
+      width: 280px;
+      transition: transform 0.2s;
+      text-align: left;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .card h2 { font-size: 20px; margin-bottom: 10px; color: #FF6B35; }
+    .card p { font-size: 14px; color: #333; }
+    .card a { display: inline-block; margin-top: 10px; color: #1a1a1a; font-weight: bold; }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>👋 Hi, I'm Jingyi</h1>
-    <p>情绪体验 × 人与物关系 × 参与式共创</p>
-    <nav>
-      <a href="coincrush.html">CoinCrush</a>
-      <a href="movemate.html">Move Mate</a>
-      <a href="contact.html">联系我</a>
-    </nav>
+  <header style="text-align:center;">
+    <h1>👋 Jingyi Studio</h1>
+    <p>探索情绪 × 设计 × 人与物关系</p>
   </header>
+
+  <div class="grid">
+    <div class="card">
+      <h2>🪙 CoinCrush</h2>
+      <p>一款将 Web3 跨链交易转化为滑动交互体验的投资工具。</p>
+      <a href="coincrush.html">→ 查看项目</a>
+    </div>
+    <div class="card">
+      <h2>🧵 Move Mate</h2>
+      <p>以口袋结构记录物件记忆的“会讲故事的家具”实验。</p>
+      <a href="movemate.html">→ 查看项目</a>
+    </div>
+    <div class="card">
+      <h2>📬 联系我</h2>
+      <p>获取 Notion / 邮箱 / LinkedIn 等联系方式。</p>
+      <a href="contact.html">→ 前往联系页</a>
+    </div>
+  </div>
 </body>
 </html>
